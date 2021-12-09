@@ -1,0 +1,19 @@
+body {
+  color: #FF0000;
+  background-color: white;
+  font-size: 16px;
+}
+
+ul {
+  background-color: turquoise;
+  padding: 10px;
+}
+ul li {
+  color: blue;
+  margin: 17px;
+}
+ul li a, ul li a:hover {
+  color: yellow;
+}
+
+/*# sourceMappingURL=test.css.map */
