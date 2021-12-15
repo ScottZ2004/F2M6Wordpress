@@ -4,3 +4,25 @@ body{
     background-color: $bg-color;
     color: white;
 }
+header{
+    div{
+
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                margin: 10px;
+                padding: 10px;
+                border-color: black;
+                border-style: solid;
+                border-width: 3px;
+                background-color: $menu-bg-color;
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    color: $menu-text-color;
+                }
+            }
+        }
+    }
+}
