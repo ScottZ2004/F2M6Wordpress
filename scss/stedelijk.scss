@@ -1,5 +1,6 @@
+@import "variables";
 body{
     font-family: 'Overpass', sans-serif;
-    background-color: darkcyan;
+    background-color: $bg-color;
     color: white;
 }
