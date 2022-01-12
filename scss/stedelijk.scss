@@ -1,33 +1,8 @@
 @import "variables";
-@import "buttons";
-body{
+@import "header";
+body {
     font-family: 'Overpass', sans-serif;
     background-color: $bg-color;
-    color: white;
-}
-header{
-    div{
-        ul{
-            display: flex;
-            justify-content: center;
-            li{
-                margin: 10px;
-                padding: 10px;
-                border-color: black;
-                border-style: solid;
-                border-width: 3px;
-                background-color: $menu-bg-color;
-                list-style-type: none;
-                a{
-                    text-decoration: none;
-                    color: $menu-text-color;
-                }
-            }
-        }
-    }
-}
-.blog-container{
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
+    color: $text-color;
+    text-decoration: none;
 }

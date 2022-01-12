@@ -9,3 +9,4 @@ function stedelijk_init_theme(){
 
 }
 add_action('init', 'stedelijk_init_theme');
+

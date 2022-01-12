@@ -8,7 +8,7 @@ get_header();
             <h2><?php the_title() ?></h2>
             <?php the_content()?>
             <hr>
-            <a href="<?php the_permalink();?>" class="button button-blue">Lees meer!</a>
+            <a href="<?php the_permalink();?>">Lees meer!</a>
         <?php endwhile;
     else:
         echo '<p>There are no posts!</p>';
