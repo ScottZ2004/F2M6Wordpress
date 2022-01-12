@@ -13,8 +13,7 @@
 <body <?php body_class();?>>    
 
 <header class="site-header">
-    <h1><?php bloginfo('name')?></h1>
-    <h4><?php bloginfo('description')?></h4>
+    <?php wp_nav_menu(array('theme_location' => 'main-menu'))?>
 </header>
 
 <div class="container">
