@@ -1,4 +1,5 @@
 @import "variables";
+@import "buttons";
 body{
     font-family: 'Overpass', sans-serif;
     background-color: $bg-color;
@@ -6,7 +7,6 @@ body{
 }
 header{
     div{
-
         ul{
             display: flex;
             justify-content: center;
@@ -25,4 +25,9 @@ header{
             }
         }
     }
+}
+.blog-container{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
 }
