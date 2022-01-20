@@ -51,4 +51,37 @@ body {
   text-decoration: none;
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*verwijderen bullet points*/
+li{
+  list-style-type: none;
+}
+
+.footer-left {
+}
+
 /*# sourceMappingURL=stedelijk.css.map */
