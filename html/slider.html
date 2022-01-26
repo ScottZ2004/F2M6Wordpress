@@ -15,60 +15,43 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
+.arrow {
+  color: white;
+  display: flex;
+  align-items: right;
+  background-color: black ;
+}
 
 .slideshow-container {
-    
+  position: absolute;
   background-color: black;
-    position: relative;
-    max-width: auto;
-    position: relative;
+  position: relative;
+  max-width: auto;
+  position: relative;
+
     
-    color: #2E8DEF;
-  
-    border: 3px solid #2E8DEF;
-    border-left:0;
     
-    z-index: -1;
-}
-.slideshow-container:before {
-    content: " ";
-    position: absolute;
-    display: block;
-    max-width: auto;
-    height: 40vh;
-       
-    border:3px solid #2E8DEF;
-    border-right: 0px;
-    
-    transform-origin: bottom left;
-    -ms-transform: skew(-30deg, 0deg);
-    -webkit-transform: skew(-40deg, 0deg);
-    transform: skew(-30deg, 0deg);
-    background-color: crimson;
+    clip-path: polygon(30% 0%, 100% 0%, 100% 75%, 100% 100%, 1000% 100%, 100% 100%, 0% 100%);
 }
 
-
-
+.vlak{
+  background-color: lime;
+  width: 100px;
+  height: 80px;
+}
 
 /* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  position: absolute;
-  top: 0;
-}
 
-/* verstop bulletpoints */
-.dot {
-    overflow: hidden;
-}
+
+
+
 
 .active {
   background-color: #717171;
 }
 
 /* Fading slider animatie */
-.fade {
+.fade {                                                                                                
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -90,35 +73,45 @@ img {vertical-align: middle;}
 </head>
 <body>
 
-<div class="arrow">
-    <div class="slideshow-container">
-    
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="img1.png" style="width:100%">
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="img2.png" style="width:100%">
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="img3.png" style="width:100%">
-    </div>
-    
-    </div>
-    <br>
-    
-    
 
-    <div style="text-align:center">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-</div>
+  <div class="arrow">
+
+
+      <div>
+        <h2>text</h2>
+      </div>
+
+      <div class="slideshow-container">
+  
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img1.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img2.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img3.png" style="width:100%">
+      </div>
+  
+      </div>
+      <br>
+  
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+
+  </div>
+
+ 
+
 
 
 

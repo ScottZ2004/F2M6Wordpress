@@ -7,13 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="content">
         <div class="text">
-            <h2>Ga op een creatief avontuur samen met uw bedrijf </h2>
-            <hr>
-            <h3>Wij bieden nu special voor u een unieke gelegenheid</h3>
+            <div>
+                <h2>Een pakkende header </h2>
+                <hr>
+                <h3>Aantrelijke text voor de kalnt</h3>
+            </div>
         </div>
-    </div>
+
+        
+ 
 
     
 
@@ -34,21 +37,16 @@ body{
 }
 
 .text{
-    display: table-cell;
-    vertical-align: middle;
-    max-width: auto;
-    height: 100vh;
-    background-color: cyan ;
-    color: rgb(214, 35, 72);
-}
-
-#content {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
     max-width: auto;
     height: 100vh;
     background-color: rgb(227, 227, 227);
+    color: rgb(214, 35, 72);
 }
-
-#content h2 {
+.text h2 {
     font-size: 45px;
 }
 

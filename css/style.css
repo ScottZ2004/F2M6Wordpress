@@ -1,17 +1,6 @@
 #dashboard {
     transition: all 500ms ease-in;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    grid-gap: 10px;
-    grid-template-areas: 
-                         "header"     "header"     
-                         "cta"        "cta"        
-                         "cta"        "cta"        
-                         "inhoud-b2b" "inhoud-b2b" 
-                         "inhoud-b2b" "inhoud-b2b" 
-                         "footer"     "footer"    ;
 }
 
 
@@ -79,7 +68,6 @@
                           
                           
                           .inhoud-b2b{
-                            grid-area: inhoud-b2b;
                             height: 40vh;
                             max-width: 70%;
                             background-color: blue;
@@ -131,7 +119,6 @@
                           
                           
                           .footer {
-                              grid-area: footer;
                               bottom: 0;
                               left: 0;
                               right: 0;
