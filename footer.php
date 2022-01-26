@@ -2,6 +2,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="<?php bloginfo('charset');?>">
     <title><?php bloginfo('name'); ?></title>
 </head>
@@ -44,8 +45,15 @@
            
 
             <div class ="foot">
-                <h2>Nieuwsbrief</h2>
-                
+                <div nieuws>
+                          
+                </div>
+
+                <div class="social">
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+                </div>
             </div>
 
             
