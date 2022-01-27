@@ -10,45 +10,166 @@ header div ul {
   background-color: #FFFFFF;
   align-items: center;
 }
+
 header div ul li {
-  margin: 10px;
+  margin: 1em;
   padding: 10px;
   border-color: #0c0c0c;
   list-style-type: none;
   font: normal normal normal 22px/26px Helvetica LT Std;
   text-transform: capitalize;
 }
+
 header div ul li a {
   color: #0A0A0A;
   text-decoration: none;
 }
+
 header div ul li a:hover {
   text-decoration: underline;
   color: #0A0A0A;
 }
+
 header img {
-  top: 16px;
-  left: 100px;
-  width: 51px;
-  height: 71px;
+  height: 10vh;
 }
 
 .button {
   background-color: #22FF06;
-  top: 36px;
-  left: 1481px;
-  width: 187px;
-  height: 32px;
+  height: 5vh;
+  width: auto;
   border: none;
   color: #0A0A0A;
-  margin: 5px;
+  margin: 0px;
 }
 
 body {
+  margin: 0px;
   font-family: "Overpass", sans-serif;
   background-color: #ffffff;
   color: #000000;
   text-decoration: none;
 }
 
+.cta {
+  color: crimson;
+  display: flex;
+  height: 65vh;
+  background-color: gray;
+}
+
+.topsection{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  z-index: 1;
+}
+
+.inhoud-b2b{
+  height: 40vh;
+  max-width: 70%;
+  background-color: blue;
+  color: white;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  float: right;
+  max-width: 30vw;
+  max-height: 100%;
+  position: relative;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  color: red;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+.footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    max-width: auto;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*verwijderen bullet points*/
+
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+/*social icons*/
+.fa {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  margin: 5px 2px;
+}
+
+
 /*# sourceMappingURL=stedelijk.css.map */
+
+
