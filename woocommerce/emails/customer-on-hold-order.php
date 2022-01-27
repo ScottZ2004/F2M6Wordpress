@@ -1,3 +1,15 @@
+<style>
+
+    *{
+        font-family: Helvetica;
+    }
+
+    p{
+       text-align: center;
+    }
+
+</style>
+
 <img style=";width: 67px;height: 93px;z-index: 2; display: block;margin-left: auto;margin-right: auto;" src="http://stedelijkmuseum.local/wp-content/uploads/2022/01/stedelijk-bter.png">
 
 
@@ -9,25 +21,32 @@
     <p style="text-align: center">Bedankt dat je voor ons hebt gekozen <?php printf( esc_html__('%s','woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?>,</p>
     <p style="text-align: center">wij gaan voor jullie zorgen dat alles tip top in orde is voor jullie</p>
     <p style="text-align: center">bezoek aan het Stedelijk Museum.</p>
+    <p style="text-align: center">Je krijgt binnenkort van ons een berichtje met meer informatie over</p>
+    <p style="text-align: center">de route, parkeren en andere belangerijke zaken.</p>
 </div>
 
 <img style="display: block;margin-left: auto;margin-right: auto;" src="http://stedelijkmuseum.local/wp-content/uploads/2022/01/stedelijk-museum.jpg" alt="Voorbeeld">
 
-<button style="display: block;margin-left: auto;margin-right: auto;">Bekijk alvast de collectie</button>
+<br>
+
+<button  style="display: block;margin-left: auto;margin-right: auto; background-color: #22ff06; width: 256px; height: 50px; border: none; border-radius: 2px; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);"><a href="https://www.stedelijk.nl/en" style="text-decoration: none">Bekijk alvast de collectie</a></button>
+
+<br>
 
 <hr style="border: solid; color: black;">
 
 <h2 style="text-align: center">Jouw gegevens</h2>
-<p style="text-align: center"><b>Naam: </b><?php printf( esc_html__('%s','woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
-<p style="text-align: center"><b>Email-adres: </b><?php printf( esc_html__('%s','woocommerce' ), esc_html( $order->get_billing_email() ) ); ?></p>
-<p style="text-align: center"><b>Telefoonnummer: </b><?php printf( esc_html__('%s','woocommerce' ), esc_html( $order->get_billing_phone() ) ); ?></p>
-<br>
-<p style="text-align: center"><b>Bedrijf: </b><?php printf( esc_html__('%s','woocommerce' ), esc_html( $order->get_billing_company() ) ); ?></p>
-<p style="text-align: center"><b>Adres: </b><?php printf( esc_html__('%s','woocommerce' ), esc_html( $order->get_billing_address_1() ) ); ?></p>
-<br>
-<p style="text-align: center"><b>Aantal collega's: </b></p>
-<p style="text-align: center"><b>hapje en drankje: </b></p>
 
+<div style="align-items: center;position: relative;">
+    <p><b>Naam: </b><?php printf( esc_html__('%s','woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
+    <p><b>Email-adres: </b><?php printf( esc_html__('%s','woocommerce' ), esc_html( $order->get_billing_email() ) ); ?></p>
+    <p><b>Telefoonnummer: </b><?php printf( esc_html__('%s','woocommerce' ), esc_html( $order->get_billing_phone() ) ); ?></p>
+    <br>
+    <p><b>Bedrijf: </b><?php printf( esc_html__('%s','woocommerce' ), esc_html( $order->get_billing_company() ) ); ?></p>
+    <p><b>Adres: </b><?php printf( esc_html__('%s','woocommerce' ), esc_html( $order->get_billing_address_1() ) ); ?></p>
+    <br>
+    <?php do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text, $email );?>
+</div>
 <hr style="border: solid; color: black;">
 
 <div style="display: flex; justify-content: space-evenly">
