@@ -51,62 +51,115 @@ body {
   text-decoration: none;
 }
 
-.cta {
-  color: crimson;
+/* Hero */
+.texthead{
   display: flex;
-  height: 65vh;
-  background-color: gray;
+  padding: 20px;
+  background-image: url("hero.jpg");
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  max-width: auto;
+  height: 100vh;
+  background-color: rgb(227, 227, 227);
+  color: rgb(235, 232, 233);
+}
+.texthead h2 {
+  font-size: 45px;
 }
 
-.topsection{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  z-index: 1;
-}
-
-.inhoud-b2b{
-  height: 40vh;
-  max-width: 70%;
-  background-color: blue;
-  color: white;
+.texthead hr{
+  height: 3px;
+  background-color: black;
 }
 
 
-.container {
-  display: grid;
-  grid-template-columns: 2, 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer";
+html body [data-ca3_iconfont="ETmodules"]::before {
+  font-family: "ETmodules";
+}
+[data-ca3_icon]::before {
+  font-weight: normal;
+  content: attr(data-ca3_icon);
 }
 
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
+.ca3-scroll-down-arrow {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ca3-scroll-down-link {
+  cursor:pointer;
+  height: 250px;
+  width: 80px;
+  margin: 0px 0 0 -40px;
+  line-height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  color: #FFF;
+  text-align: center;
+  font-size: 70px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+
+  -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+  -moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+  animation:         ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes ca3_fade_move_down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes ca3_fade_move_down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}
+/* einde hero*/
+
+
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
-/* Slideshow container */
-.slideshow-container {
-  float: right;
-  max-width: 30vw;
-  max-height: 100%;
-  position: relative;
+body{
+  margin: 0px;
 }
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 40%;
+  position: relative;
+  margin: auto;
+}
 
-/* The dots/bullets/indicators */
-.dot {
-  color: red;
+.arrow {
+  height: 40vh;
+  color: rgb(26, 24, 24);
+  display: flex;
+  background-color: #3C3C3C ;
+}
+
+.slideshow-container {
+  max-width: auto;
+  clip-path: polygon(30% 0%, 100% 0%, 100% 75%, 100% 100%, 1000% 100%, 100% 100%, 0% 100%);
 }
 
 .active {
   background-color: #717171;
 }
 
-/* Fading animation */
+/* Fading slider animatie */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -115,17 +168,17 @@ img {vertical-align: middle;}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 
-
+/*footer*/
 .footer {
     bottom: 0;
     left: 0;
@@ -149,9 +202,6 @@ img {vertical-align: middle;}
   text-decoration: none;
   list-style-type: none;
 }
-
-/*verwijderen bullet points*/
-
 
 .footer-menu {
   display: flex;
