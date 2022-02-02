@@ -59,11 +59,18 @@ body {
   background-repeat: no-repeat;
   flex-direction: column;
   justify-content: center;
-  max-width: auto;
-  height: 75vh;
+  max-width: 100%;
+  height: auto;
   background-color: rgb(227, 227, 227);
   color: rgb(235, 232, 233);
 }
+
+.textheadcontent{
+  position: absolute;
+  width: 100%;
+
+}
+
 .texthead h2 {
   font-size: 45px;
 }
@@ -73,6 +80,9 @@ body {
   background-color: black;
 }
 
+.texthead img{
+  visibility: hidden;
+}
 
 html body [data-ca3_iconfont="ETmodules"]::before {
   font-family: "ETmodules";
@@ -258,20 +268,32 @@ uitleg-b2b h3{
 
 .footer-content{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-
-.footer-menu ul li a{
-  color: #cfd2d6;
-  text-decoration: none;
+.footer-menu ul{
   list-style-type: none;
 }
 
-.footer-menu {
+.footer-menu ul li{
+  margin-bottom: 6px;
+}
+
+.footer-menu ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+#socials{
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+}
+#socials li a{
+  padding: 0;
+}
+
+.mapouter{
+  margin: 10px;
 }
 
 /*social icons*/
@@ -283,6 +305,48 @@ uitleg-b2b h3{
   font-size: 30px;
   width: 50px;
   margin: 5px 2px;
+}
+
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 35px;
+  height: 35px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 4s ease-in-out infinite;
+  -moz-animation:    fade_move_down 4s ease-in-out infinite;
+  animation:         fade_move_down 4s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
 
 

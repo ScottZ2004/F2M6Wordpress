@@ -2,12 +2,14 @@
 get_header();
 ?>
 
-    <div class="texthead">
-        <div>
-            <h2>Samen werken gecombineerd met een mooie kijk op kunst</h2>
-            <hr>
-            <h3>ontdek meer</h3>
-        </div>
+
+<div class="texthead">
+    <img src="<?php echo get_template_directory_uri()?>/css/hero.jpg" alt="hero">
+    <div class="textheadcontent">
+        <h2>Samen werken gecombineerd met een mooie kijk op kunst</h2>
+        <hr>
+        <h3>ontdek meer</h3>
+        <div class="scroll-down"></div>
     </div>
 
 
