@@ -3,11 +3,12 @@ get_header();
 ?>
 
 <div class="texthead">
-    <div>
+    <img src="<?php echo get_template_directory_uri()?>/css/hero.jpg" alt="hero">
+    <div class="textheadcontent">
         <h2>Samen werken gecombineerd met een mooie kijk op kunst</h2>
         <hr>
         <h3>ontdek meer</h3>
-        <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+        <div class="scroll-down"></div>
     </div>
 </div>
 
