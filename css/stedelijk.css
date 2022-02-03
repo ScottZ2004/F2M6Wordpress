@@ -4,6 +4,14 @@ header {
   background-color: #FFFFFF;
   align-items: center;
 }
+
+
+
+.site-header{
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 header div ul {
   display: flex;
   justify-content: center;
@@ -73,7 +81,8 @@ body {
   font-size: 45px;
 }
 
-.texthead hr{
+hr{
+  border: none;
   height: 3px;
   background-color: black;
 }
@@ -81,6 +90,16 @@ body {
 .texthead img{
   visibility: hidden;
 }
+
+
+
+
+.placeholder{
+  margin-top: 6vh;
+
+}
+
+
 
 /*goeie arrow*/
 .scroll-down {
@@ -309,7 +328,7 @@ uitleg-b2b h3{
 
 .bonno{
   margin-bottom: 10vh;
-  margin-left: 6vw;
+  margin-left: 3vw;
 }
 
 .qoute h3{
@@ -324,9 +343,9 @@ uitleg-b2b h3{
 /*onze aanbieding (offers)*/
 
 .offer{
-  margin-top: 10vh;
-  background-color: crimson;
-  color: white;
+  margin-left: 5vw;
+  margin-top: 22vh;
+  color: crimson;
 }
 
 .offer h2{
@@ -335,12 +354,27 @@ uitleg-b2b h3{
 }
 
 .offer span{
-  color: white;
+  margin-top: 2vh;
+  color: crimson;
 }
 
-.offer ul{
+
+.offer ul {
   list-style: none;
+  font-size: 20px;
 }
+
+.offer h3 {
+  margin-left: 1vw;
+  padding: 0px;
+  max-width: 40vw;
+}
+
+.rating{
+  display: flex;
+  flex-direction: row;
+}
+
 
 /*footer*/
 .footer {

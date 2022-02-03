@@ -16,7 +16,7 @@ get_header();
                     <h2>Samen werken gecombineerd met een mooie kijk op kunst</h2>
                     <hr>
                     <h3>ontdek meer</h3>
-                    <div class="scroll-down"></div>
+                    <div class="placeholder"><div class="scroll-down"></div></div>
                 </div>
             </div>
 
@@ -117,11 +117,11 @@ get_header();
                 <h2>Wat kunnen wij jullie bieden?</h2>
                 <hr>
                 <ul>
-                    <li><span class="fa fa-star checked"></span>Gezelligheid</li>
-                    <li><span class="fa fa-star checked"></span>Teamwork</li>
-                    <li><span class="fa fa-star checked"></span>Creativiteit</li>
-                    <li><span class="fa fa-star checked"></span>Nieuwe kennis op vak van kunst</li>
-                    <li><span class="fa fa-star checked"></span>Een unieke ervaring</li>
+                    <li class="rating"><span class="fa fa-star checked fa-2x"></span><h3>Gezelligheid</h3></li>
+                    <li class="rating"><span class="fa fa-star checked fa-2x"></span><h3>Teamwork</h3></li>
+                    <li class="rating"><span class="fa fa-star checked fa-2x"></span><h3>Creativiteit</h3></li>
+                    <li class="rating"><span class="fa fa-star checked fa-2x"></span><h3>Nieuwe kennis op vak van kunst</h3></li>
+                    <li class="rating"><span class="fa fa-star checked fa-2x"></span><h3>Een unieke ervaring</h3></li>
                 </ul>
             </div>
 
