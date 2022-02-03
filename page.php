@@ -95,26 +95,6 @@ get_header();
             van uw collega's onder het genot van een biertje of wijntje
         </h3>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script>
     var slideIndex = 0;
     showSlides();
@@ -135,8 +115,6 @@ get_header();
         dots[slideIndex-1].className += " active";
         setTimeout(showSlides, 4000); // Change image every 2 seconds
     }
-
-
 </script>
 
     <?php
