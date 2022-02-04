@@ -40,6 +40,7 @@ header div ul li a:hover {
 
 header img {
   height: 10vh;
+  margin-left: 4vh;
 }
 
 .button {
@@ -49,6 +50,7 @@ header img {
   border: none;
   color: #0A0A0A;
   margin: 0px;
+  margin-right: 10vh;
 }
 
 body {
@@ -408,11 +410,18 @@ uitleg-b2b h3{
 
 #socials{
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
-}
-#socials li a{
+
   padding: 0;
+}
+
+.socials-items{
+  display: flex;
+  justify-content: space-between;
+}
+
+#socials li a{
+  padding: 3vh;
 }
 
 

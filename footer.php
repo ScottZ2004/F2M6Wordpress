@@ -42,9 +42,11 @@
             <div class ="foot">
                 <div class="footer-menu">
                     <ul id="socials">
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        <div class="socials-items">
+                            <li><a href="https://www.instagram.com/stedelijkmuseum/?hl=en" class="fa fa-instagram fa-2x"></a></li>
+                            <li><a href="https://www.facebook.com/Stedelijk/" class="fa fa-facebook fa-2x"></a></li>
+                            <li><a href="https://www.linkedin.com/company/stedelijk-museum/?originalSubdomain=nl" class="fa fa-linkedin fa-2x"></a></li>
+                        </div>
                     </ul>
                 </div>
             </div>
